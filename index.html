@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple Dashboard</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Dashboard</h2>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Users</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search users...">
+      </div>
+      <ul id="userList" class="user-list"></ul>
+    </main>
+  </div>
+
+  <!-- Modal for Posts -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeModal" class="close-button">&times;</span>
+      <h1 id="userName"></h2>
+      <ul id="currentUser"></ul>
+      <div id="loadingPosts" class="loading hidden">Loading...</div>
+      <div id="errorPosts" class="error hidden"></div>
+    </div>
+  </div>
+
+  <script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>
